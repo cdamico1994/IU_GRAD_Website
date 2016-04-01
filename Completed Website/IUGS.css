@@ -1,0 +1,460 @@
+@font-face { font-family: 'BentonSansRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.svg#BentonSansRegular") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'BentonSansCondRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.svg#BentonSansCondRegular") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'BentonSansCondBold'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.svg#BentonSansCondBold") format("svg"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: 'GeorgiaProItalic'; src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot"); src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.woff") format("woff"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.svg#GeorgiaProItalic") format("svg"); font-style: normal; font-weight: normal; }
+.total{
+	/*background-image: url(back1-min2.jpeg);*/
+	background-color: rgba(125, 17, 12, 1);
+	overflow: hidden;
+	border: #82786F;
+	position: relative;
+	border-width: 3px;
+	border-style: ridge;
+	left: 5%;
+	width: 90%;
+}
+
+.header{
+	background: transparent;
+	font-size: 20px;
+	font: black;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: -2px;
+	margin-left: 42%;
+	}
+	
+.accordion-panel{
+	float: left;
+	border: black;
+	border-width: 1px;
+	border-style: outset;
+	overflow: hidden;
+	cursor: pointer;
+	}
+
+}
+.active{
+}
+.panelTitle{
+}
+
+.innerPanel{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	cursor: auto;
+	display: inline-block;
+	position: relative;
+}
+
+.headerImg{
+	background: transparent;
+	float: left;
+}
+
+.headerImg:hover{
+	background-color: rgba(0,0,0,.15);
+	}
+
+.IUGS_Header{
+	text-align: center;
+}
+
+a{
+	color: inherit;
+	}
+
+/* Home page image carousel*/
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+  }
+  
+  #homeSlider2{
+	width: 100%;
+	height: 100%;
+	}
+  .homeImage{
+	height: 100%;
+	width: 100%;
+	position: relative;
+  }
+ /*Remove carousel dots*/ 
+ .carousel-indicators li { visibility: hidden; }
+/*advanced placement tab*/
+.advanced{
+	height: 0px;
+	width: 100%;
+	top: 5%;
+	position: absolute;
+	}
+	
+.advancedTab{
+	position: absolute;
+	top: 95%;
+	height: 5%;
+	width: 100%;
+	background-color: rgba(68, 105, 125, .8);
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	}
+
+.advancedTab:hover{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	}
+
+
+/*------------------Embed Code dimension handling---------------*/
+.tableauPlaceholder2{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	}
+	
+.tableauViz2{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		pointer-events: auto;
+	}
+/*---------------------------------------------------------------*/
+
+/*info popouts--question mark click*/		
+.infoImg{
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	width: 23px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.infoImg2{
+	float: left; 
+	width: 20px; 
+	height: 20px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.infoImg2:hover{
+	width: 20px;
+	height: 20px;
+	}
+
+
+/*----------------------- Popout Box for Info--------------------*/
+.popout{
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(225,216,183,0.5);
+   display: none;
+  z-index: 100;
+}
+
+.clicked{
+}
+
+.innerBox{
+   position: absolute;
+   left: 20%;
+   right: 20%;
+   bottom: 30%;
+   width: 60%;
+   height: 60%;
+   background: white;
+   overflow: auto;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #7D110C;
+   display: none;
+   z-index: 101;
+   overflow-x: hidden;
+}
+
+.popoutHeader{
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	color: #7D110C;
+	font-size: 20px;
+	}
+	
+.bodyText{
+	margin-left: 30px;
+	margin-right: 15px;
+	font-size: 18px;
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+	}
+	
+.bodyText2{
+	margin-left: 10px;
+	font-size: 18px;
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+	}
+	
+	
+.closePopup{
+   position: absolute;
+   right: -1px;
+   width: 12px;
+   top: 0px;
+   height: 12px;
+   background: gray;
+   font-weight: bold;
+   font-size: 15px;
+   z-index: 101;
+   cursor: pointer;
+   text-align: center;
+   line-height: 5px;
+   display: inline-block;
+}
+
+.closePopup2{
+   top: 12px;
+   right: 30px;
+   width: 25px;
+   height: 25px;
+   background: #d3d3d3;
+   font-weight: bold;
+   font-size: 20px;
+   z-index: 101;
+   cursor: pointer;
+   position: fixed;
+   color: black;
+   text-align: center;
+   line-height: 12px;
+   float: right;
+   content: &#10006;
+}
+/*----------------------------------------------------------*/
+
+/*Overview Images of Tableau Dashboards*/
+.overviewImg{
+width: 100%;
+height: 100%;
+}
+
+.hoverHighlight{
+	border-style: outset;
+	border-width: 2px;
+	border-color: #4A3C31;
+	cursor: pointer;
+	}
+
+.hoverHighlight:hover{
+	width: 120%;
+	height: 120%;
+	}
+
+/*-------------Broad field Description----------------------*/
+.broadPopOut{
+	/*display: none;*/
+	margin-left: 1px;
+	}
+.broadBox{
+	background-color: rgba(130,120,111,.95);
+	width: 100%;
+	height: 100%;
+	border-width: 6px;
+	border-color: #82786F;
+	border-style: ridge;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+	display: none;
+	overflow: scroll;
+	overflow-x: auto;
+}
+	
+.broadField{
+	font-weight: bold;
+	background-color: white;
+	font-weight: bold;
+	font-size: 18px;
+	color: #7D110C;
+	border-width: 1px;
+	border-bottom-width: 0px;
+	border-style: outset;
+	border-color: black;
+	margin-left: 0px;
+}
+
+.broadContents{
+	background-color: white;
+	padding-left: 3%;
+	font-weight: regular;
+	font-weight: normal;
+	font-size: 18px;
+	color: black;
+}
+
+
+.broadColumn{
+	float: left;
+	padding-left: 1%;
+	}
+
+/*--------------------------------------------------------------*/
+
+/*--------------------------Gallery-photo slideshow elements--------------------------------------*/
+.imgSwitcher{
+  width: 100%;
+  height: 100%;
+  }
+
+
+.slideImg{
+height: 100%;
+width: 100%;
+position: absolute;
+-webkit-transition: opacity 1s ease-in;
+-moz-transition: opacity 1s ease-in;
+-o-transition: opacity 1s ease-in;
+transition: opacity 1s ease-in;
+}
+.arrow{
+  background-color: grey;
+  width: 5%;
+  position: relative;
+  height: 100%;
+  z-index: 100;
+  float: left;
+  opacity: .35;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrowImg{
+	vertical-align; middle;
+	top: 50%;
+	opacity: 1;
+	width: 100%;
+}
+.arrow:hover{
+	cursor: pointer;
+	opacity: .5;
+	}
+
+#forward{
+left: 90%;
+height: 100%;
+}
+
+#back{
+height: 100%;
+left: 0%;
+}
+
+.textOverlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	}
+	
+.text{
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+	}
+h2 {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  background: rgba(125, 17, 12, 0.72);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 30px Sans-Serif;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  background: rgba(125, 17, 12, 0.72);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 30px Sans-Serif;
+}
+
+h4 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  background: rgba(125, 17, 12, 0.72);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 30px Sans-Serif;
+}
+
+.opp h2 {
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+/*Footer stuff- sticky bottom*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+	background-image: url(http://brand.iu.edu/img/_css/bg.gif);
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 100px; /* .push must be the same height as .footer */
+	margin-top: 3%;
+}
+/*End footer stuff*/
+	
+/* ID'S PANELS AND SPECIFIC INFO*/	
+#panel1{
+
+}
+#panel2{
+
+}
+#panel3{
+
+}
+#panel4{
+
+}
+#panel5{
+
+}
+#panel6{
+
+}
+#panel7{
+
+}
+#panel8{
+
+}
